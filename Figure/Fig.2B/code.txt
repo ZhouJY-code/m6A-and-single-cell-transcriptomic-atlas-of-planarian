@@ -1,0 +1,32 @@
+deseq2 1.5±¶
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/DEG/count/11d
+#cat DESeq2_output.txt|awk '$3>0.2630'|awk '$6<0.05'|cut -f1 >up-id
+#cat DESeq2_output.txt|awk '$3<-0.2630'|awk '$6<0.05'|cut -f1 >down-id
+cat DESeq2_output.txt|awk '$3>0.5849'|awk '$6<0.05'|cut -f1|wc
+cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+
+
+cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+    965     965   12545
+[sunbf@logina1 0h]$ cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+    341     341    4433
+
+[sunbf@logina1 6h]$ cat DESeq2_output.txt|awk '$3>0.5849'|awk '$6<0.05'|cut -f1|wc
+    544     544    7072
+[sunbf@logina1 6h]$ cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+    245     245    3185
+
+cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+   1702    1702   22126
+[sunbf@logina1 3d]$ cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+   1000    1000   13000
+
+cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+   3057    3057   39741
+[sunbf@logina1 7d]$ cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+   3545    3545   46085
+
+[sunbf@logina1 11d]$ cat DESeq2_output.txt|awk '$3>0.5849'|awk '$6<0.05'|cut -f1|wc
+   4050    4050   52650
+[sunbf@logina1 11d]$ cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1|wc
+   5055    5055   65715

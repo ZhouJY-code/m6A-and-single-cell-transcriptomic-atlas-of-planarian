@@ -1,0 +1,2 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/ct
+cat 6385-id.txt |sed -e 's/ /\n/g'|sort|uniq >6385-new.txt

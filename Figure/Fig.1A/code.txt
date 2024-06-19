@@ -1,0 +1,26 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/DEG/rpkm
+cat all-control-rpkm.txt|awk -v OFS="\t" '{print $1,($2+$3+$4)/3,($5+$6+$7)/3,($8+$9+$10)/3,($11+$12+$13)/3,($14+$15+$16)/3,($17+$18+$19)/3,($20+$21+$22)/3,($23+$24+$25)/3,($26+$27+$28)/3,($29+$30+$31)/3}' >gene-expression-10.txt
+cat gene-expression-5.txt|awk '$2>0||$3>0||$4>0||$5>0||$6>0'>gene-expression-5-used.txt
+
+打开mev 导入数据 adjust data >gene/row adjustments >normalize genes/rows
+
+cluster -k-means
+
+
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/figure-used/1A
+cat 6-cluster-2.txt|sed 1d|cut -f2>1f-7677.txt
+cat 6-cluster-1.txt|sed 1d|cut -f2>2f-3363.txt
+cat 6-cluster-3.txt|sed 1d|cut -f2>3f-6853.txt
+cat 6-cluster-4.txt|sed 1d|cut -f2>4f-6314.txt
+cat 6-cluster-5.txt|sed 1d|cut -f2>5f-7335.txt
+cat 6-cluster-6.txt|sed 1d|cut -f2>6f-3673.txt
+
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 1f-7677.txt>1f-exp.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 2f-3363.txt>2f-exp.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 3f-6853.txt>3f-exp.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 4f-6313.txt>4f-exp.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 5f-7334.txt>5f-exp.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' gene-expression-5-used.txt 6f-3672.txt>6f-exp.txt
+
+cat 1f-exp.txt 2f-exp.txt 3f-exp.txt 4f-exp.txt 5f-exp.txt 6f-exp.txt >total.txt
+

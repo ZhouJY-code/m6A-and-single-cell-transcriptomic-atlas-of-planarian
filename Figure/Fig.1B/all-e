@@ -1,0 +1,17 @@
+"Term"	"classicFisher"	"Term"	"classicFisher"	"Term"	"classicFisher"	"Term"	"classicFisher"	"Term"	"classicFisher"	"Term"	"classicFisher"
+"protein folding"	2.4e-10	"protein folding"	1	"protein folding"	1	"protein folding"	1	"protein folding"	1	"protein folding"	1
+"cell projection assembly"	4.7e-08	"cell projection assembly"	1	"cell projection assembly"	1	"cell projection assembly"	1	"cell projection assembly"	1	"cell projection assembly"	8.9e-06
+"axoneme assembly"	3e-15	"axoneme assembly"	1	"axoneme assembly"	1	"axoneme assembly"	1	"axoneme assembly"	1	"axoneme assembly"	2.4e-06
+"protein polyubiquitination"	1	"protein polyubiquitination"	4.9e-07	"protein polyubiquitination"	0.00768	"protein polyubiquitination"	1	"protein polyubiquitination"	1	"protein polyubiquitination"	1
+"NIK/NF-kappaB signaling"	1	"NIK/NF-kappaB signaling"	1.5e-06	"NIK/NF-kappaB signaling"	0.01767	"NIK/NF-kappaB signaling"	1	"NIK/NF-kappaB signaling"	1	"NIK/NF-kappaB signaling"	1
+"DNA integration"	1	"DNA integration"	0.0018	"DNA integration"	5e-24	"DNA integration"	1	"DNA integration"	1	"DNA integration"	1
+"ribosome biogenesis"	1	"ribosome biogenesis"	0.00012	"ribosome biogenesis"	1.3e-14	"ribosome biogenesis"	1	"ribosome biogenesis"	1	"ribosome biogenesis"	1
+"rRNA metabolic process"	1	"rRNA metabolic process"	0.00446	"rRNA metabolic process"	1.1e-16	"rRNA metabolic process"	1	"rRNA metabolic process"	1	"rRNA metabolic process"	1
+"transcription by RNA polymerase II"	1	"transcription by RNA polymerase II"	1	"transcription by RNA polymerase II"	1	"transcription by RNA polymerase II"	3e-24	"transcription by RNA polymerase II"	1	"transcription by RNA polymerase II"	1
+"regulation of RNA biosynthetic process"	1	"regulation of RNA biosynthetic process"	1	"regulation of RNA biosynthetic process"	0.02897	"regulation of RNA biosynthetic process"	3.8e-29	"regulation of RNA biosynthetic process"	1	"regulation of RNA biosynthetic process"	1
+"transmembrane transport"	1	"transmembrane transport"	1	"transmembrane transport"	1	"transmembrane transport"	1	"transmembrane transport"	6e-30	"transmembrane transport"	2.1e-05
+"regulation of cell communication"	1	"regulation of cell communication"	1	"regulation of cell communication"	1	"regulation of cell communication"	0.01701	"regulation of cell communication"	6.3e-27	"regulation of cell communication"	1
+"regulation of signaling"	1	"regulation of signaling"	1	"regulation of signaling"	1	"regulation of signaling"	0.02186	"regulation of signaling"	9e-27	"regulation of signaling"	1
+"developmental process"	1	"developmental process"	1	"developmental process"	1	"developmental process"	1.9e-08	"developmental process"	6.2e-16	"developmental process"	0.04384
+"ion transport"	1	"ion transport"	1	"ion transport"	1	"ion transport"	1	"ion transport"	1	"ion transport"	4.1e-10
+"ion homeostasis"	1	"ion homeostasis"	1	"ion homeostasis"	1	"ion homeostasis"	1	"ion homeostasis"	2.2e-10	"ion homeostasis"	2.2e-08

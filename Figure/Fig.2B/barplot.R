@@ -1,0 +1,5 @@
+up<- c(965,544, 1702,3057,4050)
+down<- c(341,245,1000,3545,5055)
+grade <- rbind(up,down)
+names<-c("0d","6h","3d","7d","11d")
+barplot(grade,names.arg=names,main="DEG-number",xlab="stage",ylab="number",las=1,col=c("#BC3C28","#0072B5"),ylim=c(0,5000),beside=T,lwd=5)

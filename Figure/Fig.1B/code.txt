@@ -1,0 +1,8 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/figure-used/1B
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 1f-7677.txt-topGO.xls  used-term >1f-e
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 2f-3363.txt-topGO.xls  used-term >2f-e
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 3f-6853.txt-topGO.xls  used-term >3f-e
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 4f-6313.txt-topGO.xls  used-term >4f-e
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 5f-7334.txt-topGO.xls  used-term >5f-e
+awk -v FS="\t" -v OFS="\t" 'NR==FNR{x[$3]=$3"\t"$7}NR>FNR{if(x[$1]){print x[$1]}else{print $1,1}}' 6f-3672.txt-topGO.xls  used-term >6f-e
+paste 1f-e 2f-e 3f-e 4f-e 5f-e 6f-e >all-e

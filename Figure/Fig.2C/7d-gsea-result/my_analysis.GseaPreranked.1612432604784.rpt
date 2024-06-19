@@ -1,0 +1,23 @@
+producer_class	xtools.gsea.GseaPreranked
+producer_timestamp	1612432604784
+param	rpt_label	my_analysis
+param	rnd_seed	timestamp
+param	set_min	15
+param	zip_report	false
+param	create_svgs	false
+param	scoring_scheme	weighted
+param	rnk	C:\Users\sun\Desktop\7d.rnk
+param	norm	meandiv
+param	out	C:\Users\sun\Desktop
+param	mode	Max_probe
+param	include_only_symbols	true
+param	help	false
+param	set_max	500
+param	gmx	C:\Users\sun\Desktop\c5.go.bp.v7.2.symbols.gmt
+param	make_sets	true
+param	plot_top_x	20000
+param	gui	false
+param	nperm	1000
+param	collapse	No_Collapse
+
+file	C:\Users\sun\Desktop\my_analysis.GseaPreranked.1612432604784\index.html

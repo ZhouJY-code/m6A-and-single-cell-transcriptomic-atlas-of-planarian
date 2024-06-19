@@ -1,0 +1,20 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/metaprofle
+
+cat 11d-kd.bed|awk -v OFS="\t" '{print $1,$2,$3,"+"}' >ok.bed
+
+
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/metaprofle/11d-kd
+
+cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/distribution_plot_Smed.pl ./
+
+cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/Smed_ratio-distribution-mRNA ./
+
+cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/plot_tempfileR.txt ./
+
+perl distribution_plot_Smed.pl
+
+Rscript plot_tempfileR.txt
+
+cat peak-inter-for-plot|grep "cds" >11d-kd-m6a-cds
+cat peak-inter-for-plot|grep "utr3" >11d-kd-m6a-utr3
+cat peak-inter-for-plot|grep "utr5" >11d-kd-m6a-utr5

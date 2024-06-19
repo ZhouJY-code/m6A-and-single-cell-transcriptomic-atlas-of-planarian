@@ -1,0 +1,7 @@
+library(vioplot)
+a<-read.table("D:/0h.bed")
+b<-read.table("D:/6h.bed")
+c<-read.table("D:/3d.bed")
+d<-read.table("D:/7d.bed")
+e<-read.table("D:/11d.bed")
+vioplot(log2(a[,4]),log2(b[,4]),log2(c[,4]),log2(d[,4]),log2(e[,4]),col="deepskyblue",lwd=5)

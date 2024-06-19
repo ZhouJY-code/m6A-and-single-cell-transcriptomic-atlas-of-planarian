@@ -1,0 +1,15 @@
+deseq2 1.5±¶
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/DEG/count/11d
+#cat DESeq2_output.txt|awk '$3>0.2630'|awk '$6<0.05'|cut -f1|wc
+#cat DESeq2_output.txt|awk '$3<-0.2630'|awk '$6<0.05'|cut -f1|wc
+cat DESeq2_output.txt|awk '$3>0.5849'|awk '$6<0.05'|cut -f1>up-id
+cat DESeq2_output.txt|awk '$3<-0.5849'|awk '$6<0.05'|cut -f1>down-id
+
+
+##xiatiao m6A
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/deg
+cat 0h-new.txt|awk '$16<= -0.26 && $17<0.05'|cut -f2|sed 1d|sort|uniq >0h-down-id
+cat 6h-new.txt|awk '$16<= -0.26 && $17<0.05'|cut -f2|sed 1d|sort|uniq >6h-down-id
+cat 3d-new.txt|awk '$16<= -0.26 && $17<0.05'|cut -f2|sed 1d|sort|uniq >3d-down-id
+cat 7d-new.txt|awk '$16<= -0.26 && $17<0.05'|cut -f2|sed 1d|sort|uniq >7d-down-id
+cat 11d-new.txt|awk '$16<= -0.26 && $17<0.05'|cut -f2|sed 1d|sort|uniq >11d-down-id

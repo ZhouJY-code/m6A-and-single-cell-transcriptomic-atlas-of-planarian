@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="C:\Users\PC\Desktop\smed_20140614.nt" hasGeneTrack="false" hasSequenceTrack="true" locus="SMED30011250:1-1335" path="C:\Users\PC\Desktop\figure-code-2-1\S2D\igv_session.xml" version="8">
+    <Resources>
+        <Resource path="C:\Users\PC\Desktop\bw\Kd-11d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Kd-7d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Ctrl-7d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\kd3d-1-r.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Ctrl-11d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\ctrl-7d-1-r.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Ctrl-3d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\kd-3d-1.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Ctrl11d-1-r.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Kd11d-1-r.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Ctrl3d-1-r.bw"/>
+        <Resource path="C:\Users\PC\Desktop\bw\Kd7d-1-r.bw"/>
+    </Resources>
+    <Panel height="751" name="DataPanel" width="1901">
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="7a1b873a-52ab-4e8b-ad8e-3c87c7b8c033" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\Ctrl3d-1-r.bw" name="Ctrl3d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\Ctrl-3d-1.bw" name="Ctrl-3d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="1fd1f4f9-60b5-4f85-885c-96d41a14cb38" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\kd3d-1-r.bw" name="kd3d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\kd-3d-1.bw" name="kd-3d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="eaabdfcd-99cc-4a90-a2cd-21f98a71c219" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\ctrl-7d-1-r.bw" name="ctrl-7d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\Ctrl-7d-1.bw" name="Ctrl-7d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="bc75a66b-0a95-4c01-bfd7-d611f7552304" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\Kd7d-1-r.bw" name="Kd7d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\Kd-7d-1.bw" name="Kd-7d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="7bf389d7-da47-4a9f-94d3-809f486f1dcd" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\Ctrl11d-1-r.bw" name="Ctrl11d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\Ctrl-11d-1.bw" name="Ctrl-11d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track autoScale="false" clazz="org.broad.igv.track.MergedTracks" fontSize="10" id="3e08c825-d922-4d7b-925c-193963fd8a42" name="Overlay" renderer="BAR_CHART" visible="true">
+            <Track altColor="0,0,178" autoScale="false" color="255,0,0" fontSize="10" id="C:\Users\PC\Desktop\bw\Kd11d-1-r.bw" name="Kd11d-1-r.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <Track altColor="0,204,204" autoScale="false" color="0,255,255" fontSize="10" id="C:\Users\PC\Desktop\bw\Kd-11d-1.bw" name="Kd-11d-1.bw" renderer="BAR_CHART" visible="true" windowFunction="mean"/>
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="46" name="FeaturePanel" width="1901">
+        <Track clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.9365671641791045"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

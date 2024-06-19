@@ -1,0 +1,2 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/figure-used/1SG
+cat *.id|sort|uniq >12016-id

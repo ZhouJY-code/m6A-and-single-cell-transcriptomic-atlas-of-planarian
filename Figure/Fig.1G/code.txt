@@ -1,0 +1,22 @@
+打开mev 导入数据 adjust data >gene/row adjustments >normalize genes/rows
+
+cluster -k-means
+
+cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/ct中文件到当前路径
+awk '{a[$1]+=$4}END{for(i in a)print i,a[i]}' 0h.bed|sort -k1 >0h-gene-level
+awk '{a[$1]+=$4}END{for(i in a)print i,a[i]}' 6h.bed|sort -k1 >6h-gene-level
+awk '{a[$1]+=$4}END{for(i in a)print i,a[i]}' 3d.bed|sort -k1 >3d-gene-level
+awk '{a[$1]+=$4}END{for(i in a)print i,a[i]}' 7d.bed|sort -k1 >7d-gene-level
+awk '{a[$1]+=$4}END{for(i in a)print i,a[i]}' 11d.bed|sort -k1 >11d-gene-level
+
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' 0h-gene-level 6385-new.txt|awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$2}' - 6385-new.txt >6385-0h
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' 6h-gene-level 6385-new.txt|awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$2}' - 6385-new.txt >6385-6h
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' 3d-gene-level 6385-new.txt|awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$2}' - 6385-new.txt >6385-3d
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' 7d-gene-level 6385-new.txt|awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$2}' - 6385-new.txt >6385-7d
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' 11d-gene-level 6385-new.txt|awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$2}' - 6385-new.txt >6385-11d
+paste 6385-0h 6385-6h 6385-3d 6385-7d 6385-11d|awk '$1==$3'|awk '$3==$5'|awk '$5==$7'|awk '$7==$9'|awk -v OFS="\t" '{print $1,$2,$4,$6,$8,$10}' >total-m6A-level.txt
+
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$2])print x[$2]}' total-m6A-level.txt 4-cluster-1.txt >1-p.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$2])print x[$2]}' total-m6A-level.txt 4-cluster-2.txt >2-p.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$2])print x[$2]}' total-m6A-level.txt 4-cluster-3.txt >3-p.txt
+awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$2])print x[$2]}' total-m6A-level.txt 4-cluster-4.txt >4-p.txt

@@ -1,0 +1,62 @@
+cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/ct
+cat 0h.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
+   6486 1
+   1031 2
+    126 3
+     21 4
+      4 5
+      2 6
+      1 7
+      1 8
+cat 0h.bed|cut -f1|sort|uniq -c|wc
+   7672   15344  161112
+
+cat 6h.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
+   8170 1
+   1666 2
+    318 3
+     52 4
+     15 5
+      4 6
+      1 7
+      1 9
+
+cat 6h.bed|cut -f1|sort|uniq -c|wc
+  10227   20454  214767
+
+
+cat 3d.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
+   7553 1
+   1408 2
+    207 3
+     38 4
+      6 5
+      5 6
+      2 7
+      1 8
+cat 3d.bed|cut -f1|sort|uniq -c|wc
+   9220   18440  193620
+
+
+cat 7d.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
+   8000 1
+   1818 2
+    399 3
+     88 4
+     20 5
+     10 6
+      1 8
+      1 9
+cat 7d.bed|cut -f1|sort|uniq -c|wc
+  10337   20674  217077
+
+
+cat 11d.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
+   8084 1
+   1609 2
+    260 3
+     50 4
+     10 5
+      5 6
+cat 11d.bed|cut -f1|sort|uniq -c|wc
+  10018   20036  210378

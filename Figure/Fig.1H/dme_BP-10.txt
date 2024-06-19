@@ -1,0 +1,10 @@
+signal transduction	25.0705810742857
+trans-synaptic signaling	21.698970004336
+regulation of signaling	19.9208187539524
+regulation of cell communication	19.7695510786217
+cell-cell signaling	19.2757241303992
+system development	18.8239087409443
+secretion by cell	17.537602002101
+nervous system development	15.1426675035687
+developmental process	12.5228787452803
+cell differentiation	9.58502665202918
