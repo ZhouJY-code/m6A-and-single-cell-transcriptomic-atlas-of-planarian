@@ -1,5 +1,6 @@
-deseq2 1.5±¶
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/DEG/count/11d
+PATH=/xtdisk/yangyg_group/zhoujy
+
+cd $PATH/Smed/RNA-seq/DEG/count/11d
 #cat DESeq2_output.txt|awk '$3>0.2630'|awk '$6<0.05'|cut -f1 >up-id
 #cat DESeq2_output.txt|awk '$3<-0.2630'|awk '$6<0.05'|cut -f1 >down-id
 cat DESeq2_output.txt|awk '$3>0.5849'|awk '$6<0.05'|cut -f1|wc

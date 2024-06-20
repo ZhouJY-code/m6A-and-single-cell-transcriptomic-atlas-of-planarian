@@ -1,4 +1,6 @@
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/ct
+PATH=/xtdisk/yangyg_group/zhoujy
+
+cd $PATH/Smed/RNA-seq/macs2/figure/ct
 cat 0h.bed|cut -f1|sort|uniq -c|sed --e 's/^ *//'|sed -e 's/ /\t/g'|cut -f1|sort|uniq -c
    6486 1
    1031 2

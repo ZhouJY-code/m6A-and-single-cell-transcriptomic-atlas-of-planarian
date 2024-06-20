@@ -1,6 +1,8 @@
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/figure-used/2A
+PATH=/xtdisk/yangyg_group/zhoujy
+
+cd $PATH/Smed/RNA-seq/figure-used/2A
 awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]}' all-5-stage-rpkm.txt 5f-7334.txt |cut -f1,17-|awk -v OFS="\t" '{print $1,($2+$3+$4)/3,($5+$6+$7)/3,($8+$9+$10)/3,($11+$12+$13)/3,($14+$15+$16)/3}'>7334-kd.txt
-用mev聚类
+锟斤拷mev锟斤拷锟斤拷
 
 
 awk 'NR==FNR{x[$1]=$0}NR>FNR{if(x[$1])print x[$1]"\t"$0}' gene-expression-5.txt 7334-kd.txt|cut -f1,2-6,8-12 >all-ct-kd-7334
@@ -16,4 +18,4 @@ cat c-2.txt|cut -f1 >f2
 cat c-3.txt|cut -f1 >f3
 cat c-4.txt|cut -f1 >f4
 
-做功能富集
+锟斤拷锟斤拷锟杰革拷锟斤拷

@@ -1,17 +1,19 @@
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/0h
+PATH=/xtdisk/yangyg_group/zhoujy
+
+cd $PATH//Smed/RNA-seq/macs2/0h
 intersectBed -a Ctrl-0h-1/m6a_peaks.narrowPeak -b Ctrl-0h-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-0h-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $1,$2,$3,($4+$5+$6)/3}' |cut -f1-3|sort|uniq|wc
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/6h
+cd $PATH/Smed/RNA-seq/macs2/6h
 intersectBed -a Ctrl-6h-1/m6a_peaks.narrowPeak -b Ctrl-6h-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-6h-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $1,$2,$3,($4+$5+$6)/3}' |cut -f1-3|sort|uniq|wc
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/3d
+cd $PATH/Smed/RNA-seq/macs2/3d
 intersectBed -a Ctrl-3d-1/m6a_peaks.narrowPeak -b Ctrl-3d-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-3d-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $1,$2,$3,($4+$5+$6)/3}' |cut -f1-3|sort|uniq|wc
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/7d
+cd $PATH/Smed/RNA-seq/macs2/7d
 intersectBed -a Ctrl-7d-1/m6a_peaks.narrowPeak -b Ctrl-7d-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-7d-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $1,$2,$3,($4+$5+$6)/3}' |cut -f1-3|sort|uniq|wc
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/11d
+cd $PATH/Smed/RNA-seq/macs2/11d
 intersectBed -a Ctrl-11d-1/m6a_peaks.narrowPeak -b Ctrl-11d-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-11d-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $1,$2,$3,($4+$5+$6)/3}' |cut -f1-3|sort|uniq|wc
 
 
 
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/ct
+cd $PATH/Smed/RNA-seq/macs2/figure/ct
 
 wc 0h.bed
   9057  36228 270988 0h.bed

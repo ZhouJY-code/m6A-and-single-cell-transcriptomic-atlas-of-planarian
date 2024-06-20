@@ -1,6 +1,8 @@
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/DEG/count/11d
+PATH=/xtdisk/yangyg_group/zhoujy
+
+cd $PATH/Smed/RNA-seq/DEG/count/11d
 cat DESeq2_output.txt|grep -v "NA"|cut -f1,3|sed 1d >1.rw
-ÓÃexcel´Ó¸ßµ½µÍÅÅÐòºó¸ü»»»ùÒòÃû×ÖÎªsort.txt
+ï¿½ï¿½excelï¿½Ó¸ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªsort.txt
 
 awk 'NR==FNR{x[$1]=$2}NR>FNR{if(x[$1])print x[$1]"\t"$2}' smed_gene_symbol.txt sort.txt >7d.rnw
 awk 'NR==FNR{x[$1]=$2}NR>FNR{if(x[$1])print x[$1]"\t"$2}' smed_gene_symbol.txt sort.txt |awk '!a[$1]++' >7d-uniq.rnw

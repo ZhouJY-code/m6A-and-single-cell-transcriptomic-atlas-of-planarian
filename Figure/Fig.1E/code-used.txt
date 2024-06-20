@@ -1,15 +1,16 @@
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/0h
+PATH=/xtdisk/yangyg_group
+cd $PATH/Smed/RNA-seq/macs2/0h
 intersectBed -a Ctrl-0h-1/m6a_peaks.narrowPeak -b Ctrl-0h-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b Ctrl-0h-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $0,($4+$5+$6)/3}'|cut -f1,2,3,7>0h.bed
 intersectBed -a kd-0h-1/m6a_peaks.narrowPeak -b kd-0h-2/m6a_peaks.narrowPeak -wa -wb -f 0.5|intersectBed -a - -b kd-0h-3/m6a_peaks.narrowPeak -wa -wb -f 0.5|cut -f1,2,3,7,17,27|awk -v OFS="\t" '{print $0,($4+$5+$6)/3}' |cut -f1,2,3,7>0h-kd.bed
 
 cat 0h.bed|awk -v OFS="\t" '{print $1,$2,$3,"+"}' >ok.bed
-cd /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/figure/metaprofle/0h
+cd $PATH/Smed/RNA-seq/macs2/figure/metaprofle/0h
 
-cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/distribution_plot_Smed.pl ./
+cp $PATH//Smed/RNA-seq/macs2/distribution_plot_Smed.pl ./
 
-cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/Smed_ratio-distribution-mRNA ./
+cp $PATH//Smed/RNA-seq/macs2/Smed_ratio-distribution-mRNA ./
 
-cp /xtdisk/yangyg_group/sunbf/sunbf/Smed/RNA-seq/macs2/plot_tempfileR.txt ./
+cp $PATH//Smed/RNA-seq/macs2/plot_tempfileR.txt ./
 
 perl distribution_plot_Smed.pl
 
