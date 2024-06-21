@@ -17,7 +17,7 @@ vlm = vcy.VelocytoLoom("merge.loom")
 
 velo_list = [x[0:28] for x in list(vlm.ca["CellID"])]
 #keep_cell = [cell in annotation.index.tolist() for cell in vlm.ca['CellID']]
-annotation = pd.read_csv("/xtdisk/yangyg_group/zhoujy/Smed/velocity/cluster_iden_umap.csv", delimiter=',',index_col=0)
+annotation = pd.read_csv("cluster_iden_umap.csv", delimiter=',',index_col=0)
 
 keep_cell = [cell in annotation.index.tolist() for cell in velo_list]
 vlm.filter_cells(keep_cell)
